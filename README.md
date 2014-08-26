@@ -1,1 +1,1 @@
-hello world
+This is an example repository for a tutorial on git.
