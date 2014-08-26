@@ -1,5 +1,6 @@
-from math import floor, sqrt
-def nth_fibonacci(n):
+def nth_fibonacci(n): 
     n = int(n)
-    phi = (1+5**.5)/2
-    return int(floor((phi**n)/sqrt(5)+.5))
+    fibs = [1,1] # initialize with first two elements
+    while len(fibs) < n:
+        fibs.append(fibs[-2]+fibs[-1])
+    return fibs[n-1]
